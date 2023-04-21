@@ -38,16 +38,11 @@ public class logincontroller extends HttpServlet {
         String url="";
          Acount acc = null;
           AcountDBContext  dao =  new AcountDBContext();
-//            OrderDAO daoorder = new OrderDAO();
             try {
                 acc = dao.getAccount(email, password);
                 HttpSession session = request.getSession(false);
                 if (acc != null) {
-                    if (acc.getRole() == 1) {
-//                        ArrayList<OrderMangeDTO> list = daoorder.getAllOrder();
-//                        session.setAttribute("ordermange", list);
-//                        url = "admin.jsp";
-//                        request.getRequestDispatcher(url).forward(request, response);
+                    if (acc.getRole() == 1) {                 
                     } else {
                         session.setAttribute("username", acc.getFullnameString());
                         session.setAttribute("email", acc.getEmail());
