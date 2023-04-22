@@ -75,4 +75,8 @@ public class AcountDBContext {
         }
         return true;
     }
+
+    public boolean insertAccount(String email, String password, String fullname, String phone, int i, int i0) {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
 }
