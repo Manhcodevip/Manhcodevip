@@ -1,5 +1,6 @@
-package Model;
+package model;
 public class OrderDetail {
+    private Integer OrderDetailId;
     private Integer OrderId;
     private Integer ProductId;
     private Integer quantity;
@@ -8,6 +9,21 @@ public class OrderDetail {
     public OrderDetail() {
     }
 
+    public OrderDetail(Integer ProductId, Integer quantity, Float Price) {
+        this.ProductId = ProductId;
+        this.quantity = quantity;
+        this.Price = Price;
+    }
+
+    public Integer getOrderDetailId() {
+        return OrderDetailId;
+    }
+
+    public void setOrderDetailId(Integer OrderDetailId) {
+        this.OrderDetailId = OrderDetailId;
+    }
+
+    
     public OrderDetail(Integer OrderId, Integer ProductId, Integer quantity, Float Price) {
         this.OrderId = OrderId;
         this.ProductId = ProductId;

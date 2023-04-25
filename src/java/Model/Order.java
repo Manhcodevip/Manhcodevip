@@ -3,11 +3,20 @@ package model;
 import java.util.Date;
 
 public class Order {
+    private Integer OrderId;
     private String Username;
     private Date OrderDate;
     private Float Total;
 
     public Order() {
+    }
+
+    public Integer getOrderId() {
+        return OrderId;
+    }
+
+    public void setOrderId(Integer OrderId) {
+        this.OrderId = OrderId;
     }
 
     public Order(String Username, Date OrderDate, Float Total) {

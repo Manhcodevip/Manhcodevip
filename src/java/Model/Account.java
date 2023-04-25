@@ -1,89 +1,60 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
-package Model;
+package model;
 
-/**
- *
- * @author admin
- */
-public class Acount {
-          private int accID;
-    private String email;
-    private String password;
-    private String fullnameString;
-    private int status;
-    private String phone;
-    private int role;
+public class Account {
+    private String Username;
+    private String Password;
+    private String Fullname;
+    private Boolean IsAdmin;
+    private Boolean Active;
 
-    public Acount() {
+    public Account(String Username, String Password, String Fullname, Boolean IsAdmin, Boolean Active) {
+        this.Username = Username;
+        this.Password = Password;
+        this.Fullname = Fullname;
+        this.IsAdmin = IsAdmin;
+        this.Active = Active;
     }
 
-    public Acount(int accID, String email, String password, String fullnameString, int status, String phone, int role) {
-        this.accID = accID;
-        this.email = email;
-        this.password = password;
-        this.fullnameString = fullnameString;
-        this.status = status;
-        this.phone = phone;
-        this.role = role;
+    public Account() {
     }
 
-
-    public int getAccID() {
-        return accID;
+    public String getUsername() {
+        return Username;
     }
 
-    public void setAccID(int accID) {
-        this.accID = accID;
-    }
-
-    public String getEmail() {
-        return email;
-    }
-
-    public void setEmail(String email) {
-        this.email = email;
+    public void setUsername(String Username) {
+        this.Username = Username;
     }
 
     public String getPassword() {
-        return password;
+        return Password;
     }
 
-    public void setPassword(String password) {
-        this.password = password;
+    public void setPassword(String Password) {
+        this.Password = Password;
     }
 
-    public String getFullnameString() {
-        return fullnameString;
+    public String getFullname() {
+        return Fullname;
     }
 
-    public void setFullnameString(String fullnameString) {
-        this.fullnameString = fullnameString;
+    public void setFullname(String Fullname) {
+        this.Fullname = Fullname;
     }
 
-    public int getStatus() {
-        return status;
+    public Boolean getIsAdmin() {
+        return IsAdmin;
     }
 
-    public void setStatus(int status) {
-        this.status = status;
+    public void setIsAdmin(Boolean IsAdmin) {
+        this.IsAdmin = IsAdmin;
     }
 
-    public String getPhone() {
-        return phone;
+    public Boolean getActive() {
+        return Active;
     }
 
-    public void setPhone(String phone) {
-        this.phone = phone;
+    public void setActive(Boolean Active) {
+        this.Active = Active;
     }
-
-    public int getRole() {
-        return role;
-    }
-
-    public void setRole(int role) {
-        this.role = role;
-    } 
 }

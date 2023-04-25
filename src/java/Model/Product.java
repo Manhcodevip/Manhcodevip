@@ -1,18 +1,54 @@
-package Model;
+package model;
 public class Product {
+    private Integer ProductId;
     private String ProductName;
+    private String Img;
     private Float Price;
     private String Description;
-    private String CategoryName;
+    private Integer CategoryId;
 
     public Product() {
     }
 
-    public Product(String ProductName, Float Price, String Description, String CategoryName) {
+    public String getImg() {
+        return Img;
+    }
+
+    public void setImg(String Img) {
+        this.Img = Img;
+    }
+
+    public Product(String ProductName, String Img, Float Price, String Description, Integer CategoryId) {
+        this.ProductName = ProductName;
+        this.Img = Img;
+        this.Price = Price;
+        this.Description = Description;
+        this.CategoryId = CategoryId;
+    }
+
+    
+    public Product(Integer ProductId, String ProductName, String Img, Float Price, String Description, Integer CategoryId) {
+        this.ProductId = ProductId;
+        this.ProductName = ProductName;
+        this.Img = Img;
+        this.Price = Price;
+        this.Description = Description;
+        this.CategoryId = CategoryId;
+    }
+
+    public Product(String ProductName, Float Price, String Description, Integer CategoryId) {
         this.ProductName = ProductName;
         this.Price = Price;
         this.Description = Description;
-        this.CategoryName = CategoryName;
+        this.CategoryId = CategoryId;
+    }
+
+    public Integer getProductId() {
+        return ProductId;
+    }
+
+    public void setProductId(Integer ProductId) {
+        this.ProductId = ProductId;
     }
 
     public String getProductName() {
@@ -39,12 +75,12 @@ public class Product {
         this.Description = Description;
     }
 
-    public String getCategoryName() {
-        return CategoryName;
+    public Integer getCategoryId() {
+        return CategoryId;
     }
 
-    public void setCategoryName(String CategoryName) {
-        this.CategoryName = CategoryName;
+    public void setCategoryId(Integer CategoryId) {
+        this.CategoryId = CategoryId;
     }
     
 }
