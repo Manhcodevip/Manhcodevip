@@ -5,7 +5,7 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Login</title>
+        <title>Register</title>
 
         <style>
             *{
@@ -48,12 +48,13 @@
 
     </head>
     <body>
-        <form action="LoginController" method="POST">
+        <form action="RegisterController" method="POST">
             <div class="container">
-                <h2 style="text-align: center;">LOGIN</h2>
-                <input type="text" placeholder="Username" name="txtUsername">
-                <input type="password" placeholder="Password" name="txtPassword">
-                <button type="submit">Login</button>
+                <h2 style="text-align: center;">Register</h2>
+                <input type="text" placeholder="Username" name="txtUsername"/>
+                <input type="password" placeholder="Password" name="txtPassword"/>
+                <input type="text" placeholder="Fullname" name="txtFullname"/>
+                <button type="submit">Create</button>
                 <!--            <input type="text" placeholder="Username">
                             <input type="password" placeholder="Password">
                             <button type="submit">Login</button>-->
@@ -67,7 +68,7 @@
                 <%
                     }
                 %>
-                <a href="register.jsp" style="text-align: center; text-decoration: none">Register New Account</a>
+                <a href="login.jsp" style="text-align: center; text-decoration: none">Login</a>
                 <a href="index.jsp" style="text-align: center; text-decoration: none">Back To Home Page</a>
             </div>
         </form>
